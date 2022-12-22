@@ -1,0 +1,208 @@
+:root {
+    --logo-and-hover-color: #2196F3;
+    --white-color: #ffffff;
+    --links-color: #212121;
+    --text-color: #757575;
+    --hero-bg: #2F303A;
+    --what-we-do-bg: #E5E5E5;
+}
+
+main {
+    font-size: 14px;
+    color: var(--text-color);
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 0.03em;
+    line-height: 1.14;
+}
+
+/* header style */
+.page-header {
+    background-color: var(--white-color);
+}
+
+.logo-anchor {
+    font-family: 'Raleway', sans-serif;
+    font-size: 26px;
+    line-height: 1.19;
+    color: #000000;
+    font-weight: 700;
+}
+
+.logo-anchor span {
+    color: var(--logo-and-hover-color);
+}
+
+.nav-links {
+    letter-spacing: 0.02em;
+    color: var(--links-color);
+    font-weight: 500;
+}
+
+.mail,
+.phone {
+    letter-spacing: 0.02em;
+    color: var(--links-color);
+    font-weight: 500;
+    color: var(--text-color);
+}
+
+.logo-anchor:hover,
+.logo-anchor:focus {
+    color: var(--logo-and-hover-color);
+}
+
+.nav-links a:hover,
+.nav-links a:focus {
+    color: var(--logo-and-hover-color);
+}
+
+.mail:hover,
+.mail:focus {
+    color: var(--logo-and-hover-color);
+}
+
+.phone:hover,
+.phone:focus {
+    color: var(--logo-and-hover-color);
+}
+
+.undecorate-text {
+    text-decoration: none;
+}
+
+.unstyle-list {
+    list-style-type: none;
+}
+
+/* ---- hero style ----- */
+
+.hero-section {
+    background-color: var(--hero-bg);
+}
+
+.hero-title {
+    color: var(--white-color);
+    font-size: 44px;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+    font-weight: 900;
+}
+
+.hero-button {
+    background-color: var(--logo-and-hover-color);
+    color: var(--white-color);
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.06em;
+}
+
+.hero-button:hover,
+.hero-button:focus {
+    cursor: pointer;
+}
+
+/* ----- our characteristics style ------- */
+
+.characteristics,
+.what-we-do,
+.team-members {
+    background-color: var(--what-we-do-bg);
+}
+
+.description-title {
+    font-weight: 700;
+    color: var(--links-color);
+}
+
+.description-text {
+    line-height: 1.71;
+}
+
+/* ----- what we do style ------- */
+
+.what-we-do-title,
+.team-members-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+}
+
+/* ------ our team section style ------ */
+
+.team-card {
+    background-color: var(--white-color);
+
+}
+
+.person-name {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.18;
+    color: var(--links-color);
+}
+
+.person-job {
+    font-size: 16px;
+    line-height: 1.18;
+}
+
+/* ----- footer style ------ */
+
+.page-footer {
+    background-color: var(--hero-bg);
+}
+
+.footer-address {
+    color: var(--white-color);
+}
+
+.footer-mail,
+.footer-phone {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-logo {
+    color: var(--white-color);
+}
+
+.footer-mail:hover,
+.footer-mail:focus,
+.footer-phone:hover,
+.footer-phone:focus {
+    color: var(--logo-and-hover-color);
+}
+
+/*    ------- portofolio style --------- */
+/* styling filter buttons */
+
+.filter-item {
+    color: var(--links-color);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    background-color: #F5F4FA;
+}
+
+.filter-item:hover,
+.filter-item:focus {
+    background-color: var(--logo-and-hover-color);
+    color: var(--white-color);
+}
+
+/* cards style */
+
+.portofoli-card {
+    background-color: var(--white-color);
+}
+
+.portofolio-card-name {
+    color: var(--links-color);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+}
+
+.portofolio-card-description {
+    font-size: 16px;
+    line-height: 1.87;
+}
