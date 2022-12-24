@@ -7,17 +7,39 @@
     --what-we-do-bg: #E5E5E5;
 }
 
+*,
+::after,
+::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
 main {
     font-size: 14px;
     color: var(--text-color);
-    font-family: 'Roboto', sans-serif;
     letter-spacing: 0.03em;
     line-height: 1.14;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
 }
 
 /* header style */
 .page-header {
     background-color: var(--white-color);
+    padding: 24px 161px 25px 161px;
+    /* am calculat dimensiunile ca sa corespunda pt width de 1200px 
+    in loc de 1600 cat este in figma */
+    border-bottom: 1px solid #ECECEC;
+}
+
+.page-header .container {
+    align-items: center;
 }
 
 .logo-anchor {
@@ -26,6 +48,7 @@ main {
     line-height: 1.19;
     color: #000000;
     font-weight: 700;
+    margin-right: 69px;
 }
 
 .logo-anchor span {
@@ -35,7 +58,15 @@ main {
 .nav-links {
     letter-spacing: 0.02em;
     color: var(--links-color);
-    font-weight: 500;
+    font-weight: 500;   
+    display: flex;
+    gap: 37px; 
+}
+
+.header-contact {
+    margin-left: auto;
+    display: flex;
+    gap: 30px;
 }
 
 .mail,
