@@ -5,6 +5,7 @@
     --text-color: #757575;
     --hero-bg: #2F303A;
     --what-we-do-bg: #E5E5E5;
+    --our-team-bg: #F5F4FA;
 }
 
 *,
@@ -27,6 +28,10 @@ main {
     max-width: 1200px;
     margin: 0 auto;
     display: flex;
+}
+
+.section {
+    padding: 94px 0;
 }
 
 /* header style */
@@ -109,6 +114,14 @@ main {
 
 .hero-section {
     background-color: var(--hero-bg);
+    padding: 200px 0;
+    text-align: center;
+}
+
+.hero-section .container {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
 }
 
 .hero-title {
@@ -125,6 +138,8 @@ main {
     font-size: 16px;
     line-height: 1.87;
     letter-spacing: 0.06em;
+    padding: 10px 20px;
+    width: fit-content;
 }
 
 .hero-button:hover,
@@ -135,9 +150,20 @@ main {
 /* ----- our characteristics style ------- */
 
 .characteristics,
+.what-we-do {
+    background-color: var(--what-we-do-bg);
+}
+
+.characteristics,
 .what-we-do,
 .team-members {
-    background-color: var(--what-we-do-bg);
+    padding-left: 161px;
+    padding-right: 161px;
+}
+
+.characteristics ul {
+    display: flex;
+    gap: 22px;
 }
 
 .description-title {
@@ -147,6 +173,7 @@ main {
 
 .description-text {
     line-height: 1.71;
+    margin-top: 10px;
 }
 
 /* ----- what we do style ------- */
@@ -158,7 +185,29 @@ main {
     line-height: 1.16;
 }
 
+.what-we-do .container{
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+
+.presentation-image {
+    display: flex;
+    gap: 25px;
+}
+
+
+
+.what-we-do-image {
+  width: 295px;
+}
+
+
 /* ------ our team section style ------ */
+
+.team-members {
+    background-color: var(--our-team-bg);
+}
 
 .team-card {
     background-color: var(--white-color);
@@ -185,6 +234,7 @@ main {
 
 .footer-address {
     color: var(--white-color);
+    font-style: normal;
 }
 
 .footer-mail,
