@@ -320,6 +320,7 @@ main {
 .filter-item:focus {
     background-color: var(--logo-and-hover-color);
     color: var(--white-color);
+    cursor: pointer;
 }
 
 /* cards style */
