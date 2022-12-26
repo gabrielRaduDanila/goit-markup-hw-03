@@ -34,6 +34,12 @@ main {
     padding: 94px 0;
 }
 
+
+.side-padding {
+    padding-left: 161px;
+    padding-right: 161px;
+}
+
 /* header style */
 .page-header {
     background-color: var(--white-color);
@@ -63,9 +69,9 @@ main {
 .nav-links {
     letter-spacing: 0.02em;
     color: var(--links-color);
-    font-weight: 500;   
+    font-weight: 500;
     display: flex;
-    gap: 37px; 
+    gap: 37px;
 }
 
 .header-contact {
@@ -140,6 +146,9 @@ main {
     letter-spacing: 0.06em;
     padding: 10px 20px;
     width: fit-content;
+    border: 1px solid var(--logo-and-hover-color);
+    border-radius: 4px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 .hero-button:hover,
@@ -152,13 +161,6 @@ main {
 .characteristics,
 .what-we-do {
     background-color: var(--what-we-do-bg);
-}
-
-.characteristics,
-.what-we-do,
-.team-members {
-    padding-left: 161px;
-    padding-right: 161px;
 }
 
 .characteristics ul {
@@ -185,7 +187,7 @@ main {
     line-height: 1.16;
 }
 
-.what-we-do .container{
+.what-we-do .container {
     flex-direction: column;
     align-items: center;
     gap: 50px;
@@ -199,7 +201,7 @@ main {
 
 
 .what-we-do-image {
-  width: 295px;
+    width: 295px;
 }
 
 
@@ -209,32 +211,64 @@ main {
     background-color: var(--our-team-bg);
 }
 
+.team-members .container {
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+}
+
 .team-card {
     background-color: var(--white-color);
-
+    text-align: center;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+        0px 1px 1px rgba(0, 0, 0, 0.14),
+        0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
 }
+
+.our-team {
+    display: flex;
+    gap: 23px;
+}
+
+.team-person-image {
+    width: 215px;
+    margin-bottom: 30px;
+}
+
 
 .person-name {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.18;
     color: var(--links-color);
+    margin-bottom: 10px;
 }
 
 .person-job {
     font-size: 16px;
     line-height: 1.18;
+    padding-bottom: 30px;
 }
 
 /* ----- footer style ------ */
 
 .page-footer {
     background-color: var(--hero-bg);
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.page-footer .container {
+    flex-direction: column;
 }
 
 .footer-address {
     color: var(--white-color);
     font-style: normal;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
 }
 
 .footer-mail,
@@ -244,6 +278,7 @@ main {
 
 .footer-logo {
     color: var(--white-color);
+    margin-bottom: 28px;
 }
 
 .footer-mail:hover,
@@ -256,12 +291,29 @@ main {
 /*    ------- portofolio style --------- */
 /* styling filter buttons */
 
+.portofolio-page {
+    background: var(--what-we-do-bg);
+}
+
+.portofolio-page .container {    
+    flex-direction: column;
+    gap: 50px;
+}
+
+.filter {
+    display: flex;
+    gap: 8px;
+    margin: auto;
+}
+
 .filter-item {
     color: var(--links-color);
     font-weight: 500;
     font-size: 16px;
     line-height: 1.62;
     background-color: #F5F4FA;
+    border: none;
+    padding: 6px 22px;
 }
 
 .filter-item:hover,
@@ -272,18 +324,38 @@ main {
 
 /* cards style */
 
-.portofoli-card {
+
+
+.portofolio {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 22px;
+}
+
+.portofolio-card {
     background-color: var(--white-color);
+    width: fit-content;
+}
+
+.portofolio-card-image {
+    width: 280px;
+}
+
+.card-text {
+    border: 1px solid #EEEEEE;
+    border-top: none;
+    padding: 20px 24px;
 }
 
 .portofolio-card-name {
     color: var(--links-color);
     font-weight: 700;
-    font-size: 18px;
+    font-size: 14px;
     line-height: 2;
+    margin-bottom: 4px;
 }
 
 .portofolio-card-description {
-    font-size: 16px;
+    font-size: 12px;
     line-height: 1.87;
 }
