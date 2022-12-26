@@ -295,7 +295,7 @@ main {
     background: var(--what-we-do-bg);
 }
 
-.portofolio-page .container {    
+.portofolio-page .container {
     flex-direction: column;
     gap: 50px;
 }
@@ -330,6 +330,7 @@ main {
     display: flex;
     flex-wrap: wrap;
     gap: 22px;
+    line-height: 0;
 }
 
 .portofolio-card {
