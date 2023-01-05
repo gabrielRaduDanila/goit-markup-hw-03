@@ -361,3 +361,61 @@ main {
     font-size: 12px;
     line-height: 1.87;
 }
+
+@media screen and (max-width: 600px) {
+    main {
+        font-size: 12px;
+        letter-spacing: 0.02em;
+        line-height: 1;
+    }
+
+    .section {
+        padding: 50px 0;
+    }
+    
+    
+    .side-padding {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .page-header {
+        padding: 10px 20px 10px 20px;
+    }
+
+    .page-header .container {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .logo-anchor {
+        font-size: 20px;
+    }
+
+    .hero-title {
+        font-size: 28px;
+        line-height: 1.2;
+        letter-spacing: 0.04em;
+    }
+
+    .hero-button {
+        font-size: 14px;
+    }
+
+    .characteristics ul {
+        flex-wrap: wrap;
+        gap: 22px;
+    }
+
+    .presentation-image {
+        flex-direction: column;
+    }
+
+    .our-team {
+        flex-wrap: wrap;
+    }
+
+    .team-card {
+        margin: auto;
+    }
+}
